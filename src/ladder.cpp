@@ -98,6 +98,12 @@ void load_words(set<string> & word_list, const string& file_name) {
 
 
 void print_word_ladder(const vector<string>& ladder) {
+
+    if (ladder.empty()) {
+        cout << "No word ladder found." << endl;
+    }
+
+    cout << "Word ladder found: ";
     for (const auto & word: ladder)
         cout << word << " ";
 
@@ -115,4 +121,4 @@ void verify_word_ladder() {
     my_assert(generate_word_ladder("work", "play", word_list).size() == 6);
     my_assert(generate_word_ladder("sleep", "awake", word_list).size() == 8);
     my_assert(generate_word_ladder("car", "cheat", word_list).size() == 4);
-} 
+}
