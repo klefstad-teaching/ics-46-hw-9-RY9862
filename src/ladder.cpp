@@ -101,6 +101,7 @@ void print_word_ladder(const vector<string>& ladder) {
 
     if (ladder.empty()) {
         cout << "No word ladder found." << endl;
+        return;
     }
 
     cout << "Word ladder found: ";

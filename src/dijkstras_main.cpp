@@ -1,7 +1,7 @@
 #include "dijkstras.h"
 
 int main(int argc, char *argv[]) {
-    string filename = get_arg(argc, argv, "src/largest.txt");
+    string filename = get_arg(argc, argv, "src/small.txt");
     Graph G;
     int source = 0;
     vector<int> previous;
